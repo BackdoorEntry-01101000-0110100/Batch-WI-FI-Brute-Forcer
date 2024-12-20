@@ -396,7 +396,9 @@
 		goto :main
 		
 		)
-	
+	if !current_ssid==""(
+		set "current_ssid=Hidden_Network"
+	)
 	
 		if !interface_number!==0 (
 		echo.
